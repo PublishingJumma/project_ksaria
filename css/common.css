@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+*,
+:before,  :after  { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; letter-spacing: 0; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;
+}
+html  {
+	direction: ltr; font: 62.5% /1.5 'wf-NotoSansKR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', sans-serif;
+	scroll-behavior: smooth; overscroll-behavior: auto none;
+	-ms-text-underline-position: below; text-underline-position: under;
+	-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: hsla(0,0%,0%, 0.0);
+}
+body  {
+	font-family: inherit; font-size: 1.6em; line-height: inherit; overflow-y: auto; margin: 0;
+	color: WindowText; background: Transparent;
+	word-wrap: break-word; word-break: break-word; word-break: keep-all; letter-spacing: normal;
+	overscroll-behavior: inherit;
+}
+/* html5 Semantic Tag */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display:block; }
+input,  button,  select,  textarea  { font-family: inherit; font-weight: inherit; font-size: 100%; line-height: 1.25; vertical-align: middle; min-height: 2em; max-height: 100vh; color: inherit; text-shadow: inherit; }
+pre,  code,  samp,  kbd  { font-size: 100%; }
+pre *,  code *,  samp *,  kbd *  { font-family: inherit; }
+h1,  h2,  h3,  h4,  h5,  h6,  strong,  th,  optgroup,  option  { font-weight: inherit; font-size: 100%; }
+address,  em,  cite,  dfn,  var,  optgroup  { font-style: inherit; }
+article,  section,  nav,  aside,  header,  footer,
+figure,  figcaption,  main,  details,  dialog  { display: block; }
+video,  audio,  progress,  canvas  { display: inline-block; vertical-align: baseline; }
+img,  iframe,  embed,  object,  video,  audio,
+legend,  input,  button,  select,  textarea  { max-width: 100%; }
+h1,  h2,  h3,  h4,  h5,  h6,
+p,  hr,  pre,  blockquote,  ul,  ol,  dl,  dd,  figure,
+form,  fieldset,  input,  button,  select,  textarea  { margin: 0; }
+
+hr  { clear: both; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; height: 0; overflow: visible; border-style: none; }
+pre  { overflow: auto; -webkit-overflow-scrolling: touch; padding: 0; -o-tab-size: 4; -moz-tab-size: 4; tab-size: 4; word-wrap: normal; word-break: normal; }
+ul,  ol  { list-style-type: none; padding-left: 0; }
+a  { font-size: 100%; background-color: Transparent; color: inherit; text-decoration: none; }
+small  { font-size: 100%; }
+q:before,  q:after  { content: ""; content: none; }
+abbr[title]  { border-bottom-style: none; text-decoration: underline; text-decoration: underline dotted; }
+b  { font-weight: bolder; }
+mark  { background-color: Transparent; color: inherit; }
+br  { letter-spacing: 0 !important; }
+ins,  del  { text-decoration: none; }
+img  { vertical-align: middle; border-style: none; }
+iframe  { vertical-align: top; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; border-style: none; }
+audio:not([controls])  { display: none; height: 0; }
+svg:not(:root)  { overflow: hidden; }
+table  { table-layout: auto; empty-cells: show; border-collapse: collapse; border-spacing: 0; border-width: 0; }
+caption,  th  { text-align: inherit; }
+th,  td  { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; padding: 0; border: 0 solid; border-width: 1px 1.1px; }
+fieldset  { min-width: 0; padding: 0; border-style: none; }
+legend  { display: table; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; color: inherit; white-space: normal; }
+label  { display: inline-block; cursor: pointer; }
+input[type="range"],  input[type="color"],  input[type="checkbox"],  input[type="radio"]  { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; min-height: 0; padding: 0; }
+input[type="submit"],  input[type="reset"],  input[type="button"],  button  { -webkit-appearance: button; min-width: 2.4em; overflow: visible; cursor: pointer; text-transform: none; }
+select  { text-transform: none; }
+option  { display: block !important; color: inherit; white-space: nowrap; }
+textarea  { line-height: inherit; width: 100%; overflow: auto; word-break: normal; }
+progress  { vertical-align: baseline; }
+summary  { display: list-item; }
+dialog  { padding: 0; border-style: none; }
+template  { display: none; }
+
+input::placeholder{ color:rgba(187,187,187,1); }
+textarea::placeholder{ color:rgba(187,187,187,1); }
+::-moz-input-placeholder, ::-moz-textarea-placeholder{ color:rgba(187,187,187,1); }
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder{ color:rgba(187,187,187,1); }
+
+html, body {
+    font-family:'Montserrat',DroidSans,AppleSDGothicNeo,Sans-serif,Helvetica;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #292929; margin:0 auto; padding: 0; height: 100%;
+}
+
+/* Desktop first */
+.wrapper { display:flex; flex-direction:column; height:100% }
+
+/*===== header =====*/
+.header { flex: none; }
+.header_wrap  { position: relative; top: 0; left: 0; z-index: 100; width: 100%; }
+.header_wrap .header  { position: fixed; left: 0; top: 0; min-width: 100%; height: 6rem; -webkit-transition: all 0.1s ease-out; transition: all 0.1s ease-out; }
+.header_wrap .header .inner  { display: flex; align-items: center; justify-content: space-between; max-width: 1260px; height: 100%; margin: 0 auto; padding: 0 3rem; }
+.header_wrap .header h1 { display: inline-block; }
+.header_wrap .header h1 .logo{ display: block; width: 7.2rem; height: 1.5rem; background: url('../images/common/ksaria_logo_w.png') no-repeat; background-size: contain; }
+.header_wrap.js_sticky .header h1 .logo,
+    .header_wrap .header:hover h1 .logo,
+    .header_wrap .header h1 .logo.type_bk { background: url('../images/common/ksaria_logo_b.png') no-repeat; background-size: contain; image-rendering: -webkit-optimize-contrast; }
+.header_wrap.js_sticky .header,
+    .header_wrap .header:hover { color: #292929; background-color: #FFFFFF; box-shadow: 0 0 10px #000000; box-shadow: 0 0 10px rgba(0,0,0, 0.3); }
+.header_wrap.js_sticky .header:before,
+    .header_wrap .header:hover:before { opacity: 1.0; }
+
+/*-- nav --*/
+.header .nav { color: #ffffff; font-weight: 500; padding: 0; box-sizing: border-box; }
+.header .nav.c_color_black { color: #292929; }
+.nb_center { text-align: center; }
+.nb_center li:nth-child(2) { padding: 0 1rem; }
+.nb_center li a { display: inline-block; }
+.header_wrap.js_sticky .gnb li a,
+    .header_wrap:hover .nav { color: #292929; }
+.header_wrap.js_sticky .gnb li:hover a,
+    .header .gnb li:hover a { color: #3B419A; }
+.header .mobile_menu_btn,
+    .m_nav_opened_top, 
+    .m_menu_logo, 
+    .close_icon { display: none; }
+.header_wrap.js_sticky .page_on a { font-weight:bold; color:#3B419A; } /*현재 있는 위치 메뉴부분 활성화 */
+
+/* 1024px 이하 */
+@media all and (max-width:1024px){
+
+}
+/* 768px 이하 */
+@media all and (max-width:768px){
+    /*.header .nav{ width:100%; height:auto; padding: 1.5rem 3rem; box-sizing:border-box; position:absolute; top:0; left:0; display:none; color:#ffffff; background-color:#292929; }
+.header .mobile_menu_btn{ display:block; float:right; vertical-align:top; }
+.mobile_menu_btn .menu_btn{ display: block; width: 1.8rem; height: 1.2rem; background: url('../images/common/icon_m_menu_btn.png') no-repeat; }
+.header_wrap.js_sticky .mobile_menu_btn .menu_btn,
+    .header_wrap:hover .mobile_menu_btn .menu_btn{ width: 1.8rem; height: 1.2rem; background: url('../images/common/icon_m_menu_btn_black.png') no-repeat; }
+
+    .m_nav_opened_top{ position:relative; height:3rem; padding-bottom:15%; }
+    .m_nav_opened_top a{ display:inline-block; }
+    .m_menu_logo{ float:left; }
+    .m_menu_logo a{ color:#ffffff; font-family:'Montserrat',DroidSans,AppleSDGothicNeo,Sans-serif,Helvetica; }
+    .close_icon{ display:inline-block; width:1.6rem; height:1.6rem; float:right; }
+    .close_icon a{ display:inline-block; padding:0 0.3rem; } */
+}
+/* 420px 이하 */
+@media all and (max-width:420px){
+    .header_wrap .header .inner  { padding: 0 1.6rem; }
+    .nb_center li a { font-size: 1.4rem; }
+}
+
+
+/*===== contents region =====*/
+.container { width: 100%; max-width: 1260px; height: 100%; overflow: hidden; padding: 0 1.6rem 0 1.6rem; margin:0 auto; } /*가운데 오는 박스, 반복 사용*/
+.cfiexd:after { display:block; content:""; clear:both; }
+
+
+/*== layout for main contents region ==*/
+.ly_main { width: 100%; height: 100%; margin: 5rem auto; }
+
+
+/*===== footer =====*/
+footer { width: 100%; margin-top: auto; text-align: left; }
+.ly_footer { width: 100%; height: 100%; overflow: hidden; font-size: 1.4rem; background-color: #292929; color: #ffffff; }
+.ly_footer .inner { margin: 0 auto; width:100%; max-width: 126rem; padding: 3rem; display: flex; flex-flow: column wrap; }
+.ly_footer .inner .logo { display: block; width: 7.2rem; height: 1.5rem; background: url('../images/common/ksaria_logo_w.png') no-repeat; background-size: contain; /* image-rendering: -webkit-optimize-contrast; */ }
+.ly_footer .inner address { display: block; padding-top: 1rem; }
+.company_info >* { display: inline-block; }
+.company_info >*:nth-child(n+2):before { content: ''; display: inline-block; vertical-align: middle; margin: 0 0.2rem; width: 1px; height: 1.2rem; background: #FFFFFF; }
+.ly_footer .inner .copyright { padding-top: 1rem; } 
+
+/* 1024px 이하 */
+@media all and (max-width:1024px){
+}
+/* 768px 이하 */
+@media all and (max-width:768px){
+    .ly_footer { font-size: 1.2rem; }
+    .ly_footer .inner { padding: 3rem 1.5rem; justify-content: center; }
+}
+/* 420px 이하 */
+@media all and (max-width:420px){
+    .nb_center li a { font-size: 1.4rem; }
+}
+

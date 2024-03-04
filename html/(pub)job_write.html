@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KSARIA &middot; 지원서 작성</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/module.css">
+    <link rel="stylesheet" type="text/css" href="../css/contents.css">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+</head>
+
+<body>
+    <div id="Document" class="wrapper">
+        <!-- Header contents -->
+        <header>
+            <div class="top_bg job_write">
+                <div class="container">
+                    <div class="visual_text c_color_black">
+                        <h2 class="o_heading2">지원서 작성</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_wrap">
+                <div class="header cfixed">
+                    <div class="inner">
+                        <h1 class="index_header_logo">
+                            <a href="./(pub)index.html" class="logo type_bk"></a>
+                        </h1>
+                        <nav class="nav c_color_black">
+                            <!-- <div class="m_nav_opened_top">
+                            <span class="m_menu_logo">
+                                <a href="#">KSARIA</a>
+                            </span>
+                            <span class="close_icon">
+                                <a href="#">
+                                <img class="mobile_menu_btn" src="../images/jobs/icon_close_nav.png" alt="닫기">
+                                </a>
+                            </span>
+                            </div> -->
+                            <ul class="gnb nb_center">
+                            <li class=""> <!-- add class '.page_on'-->
+                                <a href="https://www.ksas.co.kr" target="_blank" rel="noreferrer noopener">KSA솔루션</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">지원서 등록</a>
+                            </li> -->
+                            </ul>
+                        </nav>
+                        <span class="mobile_menu_btn">
+                            <a href="javascript:" class="menu_btn"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /. Header contents end -->
+
+        <!-- Main contents -->
+        <main id="main" class="doc_main">
+            <div class="ly_main">
+                <section class="o_section">   
+                    <div class="container">
+                        <h3 class="o_heading3"><span class="inner">지원서 정보입력</span></h3>
+                        <!-- form element -->
+                        <form>
+                            <div class="m_form_group">
+                                <div class="notice">
+                                    <em>* 필수 입력 항목</em>
+                                </div>
+                                <table class="form form_table">
+                                    <colgroup>
+                                        <col style="width:18.36%;">
+                                        <col style="width:auto; ">
+                                    </colgroup>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>이름<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms row">
+                                                    <span class="o_input">
+                                                        <input type="text" class="enter" title="이름 입력" required/>
+                                                    </span>
+                                                </div>
+                                                <!-- alert message -->
+                                                    <div class="m_alert">
+                                                        <p>이름을 입력해 주세요.</p>
+                                                    </div>
+                                                <!--// alert message -->
+
+                                                <!-- submitted data
+                                                    <div class="m_forms row">
+                                                        <span class="submitted">홍길동</span>
+                                                    </div>
+                                                // submitted data -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>휴대폰<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms telephone">
+                                                    <span class="o_input">
+                                                        <input type="text" class="enter" maxlength="3" title="휴대폰 첫째 자리" required/>
+                                                        <!-- <select class="enter" required="required">
+                                                            <option value="" selected="selected">010</option>
+                                                            <option value="value">011</option>
+                                                            <option value="value">018</option>
+                                                        </select> -->
+                                                    </span>
+                                                    <span class="hyphen">-</span>
+                                                    <span class="o_input">
+                                                        <input type="text" class="enter" maxlength="4" title="휴대폰 둘째 자리" required/>
+                                                    </span>
+                                                    <span class="hyphen">-</span>
+                                                    <span class="o_input">
+                                                        <input type="text" class="enter" maxlength="4" title="휴대폰 셋째 자리" required/>
+                                                    </span>
+                                                </div>
+                                                <!-- alert message -->
+                                                    <div class="m_alert">
+                                                        <p>휴대폰 번호를 입력해 주세요.</p>
+                                                    </div>
+                                                <!--// alert message -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>E-mail<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms row">
+                                                    <span class="o_input">
+                                                        <input type="email" placeholder="" value="" class="enter" title="E-mail 주소 입력" required/>
+                                                    </span>
+                                                </div>
+                                                <!-- alert message -->
+                                                    <div class="m_alert">
+                                                        <p>E-mail 주소를 입력해 주세요.</p>
+                                                    </div>
+                                                <!--// alert message -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>투입가능일<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms row">
+                                                    <span class="o_input">
+                                                        <input type="date" value="" class="enter" title="투입 가능일 입력" required/>
+                                                    </span>
+                                                </div>
+                                                <!-- alert message -->
+                                                    <div class="m_alert">
+                                                        <p>투입 가능한 날짜를 입력해 주세요.</p>
+                                                    </div>
+                                                <!--// alert message -->
+                                            </td>
+                                        </tr>                                    
+                                        <tr>
+                                            <th>희망단가<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms unit">
+                                                    <span class="o_input">
+                                                        <input type="text" placeholder="ex) 300" value="" class="enter" title="희망단가 입력" required/>
+                                                    </span>
+                                                    <span class="units">만원</span>
+                                                </div>
+                                                <!-- alert message -->
+                                                    <div class="m_alert">
+                                                        <p>희망단가를 입력해 주세요.</p>
+                                                    </div>
+                                                <!--// alert message -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>등급 정보</th>
+                                            <td>
+                                                <div class="m_forms row">
+                                                    <span class="o_input">
+                                                        <input type="text" placeholder="ex) 고급" value="" class="enter" title="등급 정보 입력"/>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>연락 가능 시간대</th>
+                                            <td>
+                                                <div class="m_forms row">
+                                                    <span class="o_input">
+                                                        <input type="text" placeholder="ex) 오전 11시 ~ 오후 4시" value="" class="enter" title="연락 가능 시간대 입력"/>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>메모</th>
+                                            <td>
+                                                <div class="m_forms textarea">
+                                                    <span class="o_input"><textarea cols="20" rows="3" maxlength="500" title="메모 내용 입력"></textarea></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="additional_forms">
+                                <div class="m_binds">
+                                    <span class="wrap _start">
+                                        <span class="item"><strong class="guide"><span class="inner">이력서, 경력기술서 양식이 필요하신 분은 다운로드가 가능합니다.</span></strong></span>
+                                    </span>
+                                    <span class="wrap _end">
+                                        <span class="item"><a href="../pdf/(ksaria)이력서_양식.docx" role="button" class="button _download" download><span class="inner">이력서 다운로드</span></a></span>
+                                        <span class="item"><a href="../pdf/(ksaria)경력기술서_양식.docx" role="button" class="button _download" download><span class="inner">경력기술서 다운로드</span></a></span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="m_form_group">
+                                <div class="help">
+                                    <em>- 이력서 또는 포트폴리오 파일을 압축한 뒤 첨부해주세요.</em>
+                                </div>
+                                <table class="form form_table">
+                                    <colgroup>
+                                        <col style="width:18.36%;">
+                                        <col style="width:auto; ">
+                                    </colgroup>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>첨부파일<em class="required_label"><span class="inner">필수입력</span></em></th>
+                                            <td>
+                                                <div class="m_forms file">
+                                                    <span class="o_file">
+                                                        <label for="file-upload">파일 선택</label>
+                                                        <input id="file-upload" type="file" class="custom_file" title="첨부파일 선택" required/>
+                                                        <span class="custom_file_input"></span> <!-- { @DEV } input area -->
+                                                    </span>
+                                                    <!-- <span class="binds">
+                                                        <button type="button" class="o_img_button _removal"><span class="inner">삭제</span></button>
+                                                    </span> -->
+                                                </div>
+                                                <div class="m_alert">
+                                                    <p>파일을 첨부해 주세요.</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="form_tail">
+                                <div class="inner">
+                                    <div class="notice">
+                                        <p>
+                                            <span class="inner">작성하신 지원서가 최종 전달되며 잘못된 정보 작성 시 '<strong class="c_color_red">지원 현황 이메일 수신</strong>' 할 수 없습니다.</span>
+                                        </p>
+                                        <p>
+                                            <span class="inner">해당 공고에 지원하기 위해서는 <a href="./(pub)policy.html" class="article" target="_blank" rel="noreferrer noopener"><strong class="c_underline">개인정보 처리방침</strong></a>에 동의하셔야 합니다.</span>
+                                        </p>
+                                    </div>
+
+                                    
+                                    <div class="agree">
+                                        <a href="./(pub)policy.html" class="article" target="_blank" rel="noreferrer noopener"><strong class="c_underline">개인정보 처리방침</strong></a>
+                                        에 대해 동의하시겠습니까?
+                                        
+                                        <div class="m_form_group">
+                                            <span class="form_radio">
+                                                <input type="radio" name="radio_check" id="radio01">
+                                                <label for="radio01" class="checker">동의함</label>
+                                            </span>
+                                            <span class="form_radio">
+                                                <input type="radio" name="radio_check" id="radio02">
+                                                <label for="radio02" class="checker">동의하지 않음</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                        <!-- // form element -->
+                        <div class="form_buttons">
+                            <div class="binds">
+                                <ul class="m_buttons">
+                                    <li><button type="button" class="button normal" onclick="location.href='./(pub)index.html'"><span class="inner">메인으로</span></button></li>
+                                    <li><button type="button" class="button primary" onclick="location.href='./(pub)mail_submitted.html'"><span class="inner">지원하기</span></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>            
+                </section>
+            </div>
+        </main>
+        <!-- /. Main contents end -->
+
+        <!-- Footer contents -->
+        <footer>
+            <div class="ly_footer">
+                <div class="inner">
+                    <div class="company">
+                        <a href="./(pub)index.html" class="logo"></a>
+                        <address>
+                            <span class="name">(주)케이에스에이솔루션</span>
+                            <span class="address">주소 : 부산광역시 강서구 미음산단로 129 2층</span>
+                        </address>
+                        <div class="company_info">
+                            <span class="wrap">
+                                <span class="title">대표이사 : </span>
+                                <span class="info">김민혁, 송영석</span>
+                            </span>
+                            <span class="wrap">
+                                <span class="title">대표번호 : </span>
+                                <span class="info">051-941-1264</span>
+                            </span>
+                            <span class="wrap">
+                                <span class="title">팩스 : </span>
+                                <span class="info">0504-414-1264</span>
+                            </span>
+                        </div>
+                    </div>
+                    <small class="copyright">COPYRIGHT &copy; 케이에스에이솔루션 ALL RIGHTS RESERVED.</small>
+                </div>
+            </div>
+        </footer>
+        <!-- /. Footer contents end -->
+    </div>
+</body>
+</html>
